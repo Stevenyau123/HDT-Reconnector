@@ -17,7 +17,7 @@ namespace HDT_Reconnector
 {
     public class ReconnectorPlugin : IPlugin
     {
-        public string Name => "Reconnector";
+        public string Name => "HSReconnector";
 
         public string Description => "Quickly skip hearthstone animation by disconnecting and reconnecting\n\nFor more information and updates, check out:\nhttps://github.com/haoruan/HDT-Reconnector";
 

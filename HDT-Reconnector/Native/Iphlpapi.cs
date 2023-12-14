@@ -129,10 +129,10 @@ namespace HDT_Reconnector.Native
             public MIB_TCPROW_OWNER_MODULE[] table;
         }
 
-        [DllImport("iphlpapi.dll", SetLastError = true)]
+        [DllImport("IPHLPAPI.dll", SetLastError = true)]
         internal static extern uint GetExtendedTcpTable(IntPtr pTcpTable, ref int dwOutBufLen, bool sort, int ipVersion, TCP_TABLE_CLASS tblClass, uint reserved = 0);
 
-        [DllImport("iphlpapi.dll", SetLastError = true)]
+        [DllImport("IPHLPAPI.dll", SetLastError = true)]
         internal static extern int SetTcpEntry(IntPtr pTcprow);
 
         public static List<MIB_TCPROW_OWNER_MODULE> GetAllTCPConnections()
